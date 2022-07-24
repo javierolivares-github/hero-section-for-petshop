@@ -23,7 +23,6 @@
 /* (1) - Hero container style */
 .hero {
   background: linear-gradient(180deg, var(--sand-69) 100%, var(--sand-73) 100%);
-  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -70,7 +69,6 @@
 
 /* (3) - Image style */
 .image-container {
-  width: 100%;
   max-width: 1440px;
   display: flex;
   justify-content: center;
