@@ -69,7 +69,6 @@
 
 /* (3) - Image style */
 .image-container {
-  max-width: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +138,7 @@
 }
 
 /* (5) - Tablet version*/
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 768px) {
   .text-container {
     gap: 34px;
     margin-top: 160px;
@@ -160,6 +159,10 @@
     line-height: 24px;
   }
 
+  .image-container {
+    max-width: 1080px;
+  }
+
   .paws .paw-5 {
     top: 560px;
     left: 730px;
@@ -167,7 +170,7 @@
 }
 
 /* (6) - Desktop version */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .text-container .title {
     font-size: 84px;
     line-height: 84px;
@@ -178,11 +181,32 @@
     line-height: 28px;
   }
 
+  .image-container {
+    max-width: 1080px;
+  }
+
   .image-container .thumb {
     transform: scale(0.9);
   }
 
   .paws .paw-5 {
     left: 1240px;
+  }
+}
+
+/* (7) - Smart TV version */
+@media screen and (min-width: 1920px) {
+  .text-container .title {
+    font-size: 112px;
+    line-height: 112px;
+  }
+
+  .text-container .copy {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .image-container {
+    max-width: 1440px;
   }
 }
